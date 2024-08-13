@@ -4,20 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Motivational Poster</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .poster {
+            background-color: #fff;
+            border: 5px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0;
+        }
+        
+        .author {
+            font-size: 20px;
+            font-style: italic;
+            color: #4CAF50;
+        }
+        
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: url('https://source.unsplash.com/1600x900/?nature,motivation');
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main">
-        <div class="p1">
-            <img src="pic4.png" alt="" height="500px" width="500px">
-            <h1>A.B.O.V.E & B.E.Y.O.N.D</h1>
-            <hr dir="auto" color="lightblue" style="margin-left: -150px;">
-            <h2 style="margin-left: -140px;">When a Team Of Dedicated Individuals Makes A Commitment To Act as One... <br>
-                <h2 style="align-items: center;">The Sky's The Limit.</h2>
-            </h2>
-        </div>
+    <div class="background-image"></div>
+    <div class="poster">
+        <div class="quote">"Believe you can and you're halfway there."</div>
+        <div class="author">- Theodore Roosevelt</div>
+    </div>
 </body>
 
 </html>
